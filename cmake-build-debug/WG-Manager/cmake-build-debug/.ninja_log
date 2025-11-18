@@ -22,3 +22,7 @@
 468	693	1763487639871777816	CMakeFiles/WGManager.dir/src/model/Task.cpp.o	f787911c33f0ed21
 498	808	1763487639902352092	CMakeFiles/WGManager.dir/src/model/WG.cpp.o	4e249f54bc55d1d4
 808	840	1763487640211712966	WGManager	437f3d620034f7ef
+6	330	1763488431222964993	CMakeFiles/WGManager.dir/src/managers/TaskManager.cpp.o	fccdd1b9681b4fe9
+6	335	1763488431223139575	CMakeFiles/WGManager.dir/src/model/WG.cpp.o	4e249f54bc55d1d4
+5	361	1763488431222214125	CMakeFiles/WGManager.dir/src/main.cpp.o	5c747823dd4e1bc9
+361	395	1763488431577413638	WGManager	437f3d620034f7ef

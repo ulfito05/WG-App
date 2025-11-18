@@ -1,6 +1,17 @@
 #include "TaskManager.h"
+#include <stdexcept>
 
-void TaskManager::registerPerson(Person *p) {
+// Hilfsfunktion: Task anhand ID finden
+Task* TaskManager::findTaskById(int id) {
+    for (auto &t : tasks) {
+        if (t.getId() == id) {
+            return &t;
+        }
+    }
+    return nullptr;
+}
+
+void TaskManager::registerPerson(Person* p) {
     persons.push_back(p);
 }
 
@@ -9,25 +20,29 @@ void TaskManager::addTask(const Task& task) {
 }
 
 void TaskManager::assignTask(int taskId, int personId) {
-    for (auto& t : tasks) {
-        if (t.getId() == taskId) {
-            for (auto* p : persons) {
-                if (p->getId() == personId) {
-                    t.assignTo(p);
-                    return;
-                }
-            }
-        }
+    Task* task = findTaskById(taskId);
+    if (!task) {
+        throw std::runtime_error("TaskManager: Task ID existiert nicht.");
     }
-}
 
-void TaskManager::setStatus(int taskId, int /*personId*/, int newStatus) {
-    for (auto& t : tasks) {
-        if (t.getId() == taskId) {
-            t.setStatus(static_cast<TaskStatus>(newStatus));
+    for (auto* p : persons) {
+        if (p->getId() == personId) {
+            task->assignTo(p);
             return;
         }
     }
+
+    throw std::runtime_error("TaskManager: Person ID existiert nicht.");
+}
+
+void TaskManager::setStatus(int taskId, int personId, int newStatus) {
+    Task* task = findTaskById(taskId);
+    if (!task) {
+        throw std::runtime_error("TaskManager: Task ID existiert nicht.");
+    }
+
+    TaskStatus status = static_cast<TaskStatus>(newStatus);
+    task->setStatus(status);
 }
 
 std::vector<Task> TaskManager::getTasks() const {

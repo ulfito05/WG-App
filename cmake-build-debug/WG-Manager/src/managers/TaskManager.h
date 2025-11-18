@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <optional>
 #include "interfaces/ITaskManager.h"
 #include "../model/Task.h"
 #include "../model/Person.h"
@@ -8,6 +9,8 @@ class TaskManager : public ITaskManager {
 private:
     std::vector<Task> tasks;
     std::vector<Person*> persons;
+
+    Task* findTaskById(int id);
 
 public:
     void registerPerson(Person* p);
