@@ -1,6 +1,7 @@
 #pragma once
 #include <vector>
 #include <string>
+#include <list>
 #include "Person.h"
 #include "Room.h"
 #include "../managers/TaskManager.h"
@@ -10,8 +11,8 @@
 class WG {
 private:
     std::string name;
-    std::vector<Person> residents;
-    std::vector<Room> rooms;
+    std::list<Person> residents;
+    std::list<Room> rooms;
 
     TaskManager taskManager;
     ShoppingList shoppingList;
@@ -25,6 +26,7 @@ public:
     void addPerson(const Person& person);
     void addRoom(const Room& room);
 
+    // 🔥 DIESE 3 METHODEN FEHLTEN!!!
     TaskManager& getTaskManager();
     ShoppingList& getShoppingList();
     FinanceManager& getFinanceManager();
