@@ -1,0 +1,3 @@
+/Users/ulfrenerontgen/CLionProjects/WG-App_1/cmake-build-debug/WG-Manager/cmake-build-debug/CMakeFiles/WGManager.dir
+/Users/ulfrenerontgen/CLionProjects/WG-App_1/cmake-build-debug/WG-Manager/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ulfrenerontgen/CLionProjects/WG-App_1/cmake-build-debug/WG-Manager/cmake-build-debug/CMakeFiles/rebuild_cache.dir

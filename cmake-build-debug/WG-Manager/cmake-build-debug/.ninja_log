@@ -1,0 +1,24 @@
+# ninja log v6
+328	657	1763485823867981898	CMakeFiles/WGManager.dir/src/model/WG.cpp.o	c409a4a0d7446174
+325	569	1763485823865368630	CMakeFiles/WGManager.dir/src/model/ShoppingItem.cpp.o	7f36bf5c4c38f1d1
+12	483	1763485823552242110	CMakeFiles/WGManager.dir/src/managers/TaskManager.cpp.o	1e2c5c35c5921a4
+320	415	1763486062158036031	WGManager	437f3d620034f7ef
+12	451	1763485823551843656	CMakeFiles/WGManager.dir/src/managers/FinanceManager.cpp.o	4a5ed6328b6cb7f6
+326	568	1763485823866584702	CMakeFiles/WGManager.dir/src/model/Task.cpp.o	c85d46530e23a4b1
+5	443	1763485622012049171	CMakeFiles/WGManager.dir/src/main.cpp.o	64897c1accd0ed68
+12	326	1763485823552619024	CMakeFiles/WGManager.dir/src/model/Room.cpp.o	dc840c66fc7437c3
+4	320	1763486061842414367	CMakeFiles/WGManager.dir/src/model/Person.cpp.o	2b5f6ce3f53c0fe0
+12	464	1763485823552094820	CMakeFiles/WGManager.dir/src/managers/ShoppingList.cpp.o	d01df51113e05237
+12	328	1763485823552371151	CMakeFiles/WGManager.dir/src/model/Expense.cpp.o	274a478f7edff927
+2	49	1763487634366559040	build.ninja	226a06c56ed4a3eb
+4	324	1763487639408447522	CMakeFiles/WGManager.dir/src/model/Expense.cpp.o	43f4eb5e5dae6bde
+5	335	1763487639409023852	CMakeFiles/WGManager.dir/src/model/Person.cpp.o	24a1b468302707c5
+3	468	1763487639407472151	CMakeFiles/WGManager.dir/src/managers/FinanceManager.cpp.o	1ff389092f225780
+4	498	1763487639408095523	CMakeFiles/WGManager.dir/src/managers/TaskManager.cpp.o	fccdd1b9681b4fe9
+4	512	1763487639407652609	CMakeFiles/WGManager.dir/src/managers/ShoppingList.cpp.o	fa97fca22b041aac
+3	536	1763487639407133403	CMakeFiles/WGManager.dir/src/main.cpp.o	5c747823dd4e1bc9
+324	590	1763487639728184349	CMakeFiles/WGManager.dir/src/model/Room.cpp.o	b63bbc32d44abf6a
+336	601	1763487639739678879	CMakeFiles/WGManager.dir/src/model/ShoppingItem.cpp.o	a393c3222a0191c6
+468	693	1763487639871777816	CMakeFiles/WGManager.dir/src/model/Task.cpp.o	f787911c33f0ed21
+498	808	1763487639902352092	CMakeFiles/WGManager.dir/src/model/WG.cpp.o	4e249f54bc55d1d4
+808	840	1763487640211712966	WGManager	437f3d620034f7ef
