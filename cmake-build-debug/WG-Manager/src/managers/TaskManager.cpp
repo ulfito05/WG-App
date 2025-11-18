@@ -19,6 +19,13 @@ void TaskManager::addTask(const Task& task) {
     tasks.push_back(task);
 }
 
+Task* TaskManager::createTask(const std::string& title, const std::string& description) {
+    int id = tasks.size() + 1; // einfacher Auto-ID Counter
+    tasks.emplace_back(id, title, description);
+    return &tasks.back();
+}
+
+
 void TaskManager::assignTask(int taskId, int personId) {
     Task* task = findTaskById(taskId);
     if (!task) {

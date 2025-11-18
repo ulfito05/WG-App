@@ -18,16 +18,30 @@ private:
     ShoppingList shoppingList;
     FinanceManager financeManager;
 
+    int nextPersonId = 1;
+    int nextRoomId = 1;
+    int nextTaskId = 1;        // wird später im TaskManager genutzt
+    int nextItemId = 1;        // ShoppingList
+
+
 public:
     WG(const std::string& name);
 
     const std::string& getName() const;
 
-    void addPerson(const Person& person);
-    void addRoom(const Room& room);
+    Person* createPerson(const std::string& name, bool isAdmin = false);
+    Person* getPersonById(int id);
 
-    // 🔥 DIESE 3 METHODEN FEHLTEN!!!
+    Room* createRoom(const std::string& name);
+    Room* getRoomByName(const std::string& name);
+
+    void printResidents() const;
+    void printRooms() const;
+
+
     TaskManager& getTaskManager();
     ShoppingList& getShoppingList();
     FinanceManager& getFinanceManager();
+
+
 };

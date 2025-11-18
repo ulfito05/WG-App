@@ -19,4 +19,6 @@ public:
     void assignTask(int taskId, int personId) override;
     void setStatus(int taskId, int personId, int newStatus) override;
     std::vector<Task> getTasks() const override;
+    Task* createTask(const std::string& title, const std::string& description = "");
+
 };
